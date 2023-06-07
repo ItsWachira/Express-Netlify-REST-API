@@ -28,7 +28,7 @@ jobs:
       - name: Build files
         run: npm run build
 
-      - name: Deploy production API to Netlify
+      - name: Deploy API to Netlify
         uses: South-Paw/action-netlify-deploy@v1.2.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
